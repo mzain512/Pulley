@@ -32,7 +32,7 @@ extension PulleyViewController: PulleyDrawerViewControllerDelegate {
         }
     }
 
-    public func drawerPositionDidChange(drawer: PulleyViewController) {
+    open func drawerPositionDidChange(drawer: PulleyViewController) {
         if let drawerVCCompliant = drawerContentViewController as? PulleyDrawerViewControllerDelegate {
             drawerVCCompliant.drawerPositionDidChange?(drawer: drawer)
         }
