@@ -135,7 +135,7 @@ open class PulleyViewController: UIViewController {
             }
 
             addChildViewController(controller)
-            controller.view.translatesAutoresizingMaskIntoConstraints = false
+            controller.view.translatesAutoresizingMaskIntoConstraints = true
             controller.view.frame = primaryContentContainer.frame
             primaryContentContainer.addSubview(controller.view)
             controller.didMove(toParentViewController: self)
@@ -168,7 +168,7 @@ open class PulleyViewController: UIViewController {
             }
 
             addChildViewController(controller)
-            controller.view.translatesAutoresizingMaskIntoConstraints = false
+            controller.view.translatesAutoresizingMaskIntoConstraints = true
             controller.view.frame = drawerContentContainer.frame
             drawerContentContainer.addSubview(controller.view)
             controller.didMove(toParentViewController: self)
